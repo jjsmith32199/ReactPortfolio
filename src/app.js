@@ -1,24 +1,27 @@
 import React from "react";
-import './app.css';
-import  About from "./components/PortfolioPages/About.js";
-import  ContactMe from "./components/PortfolioPages/ContactMe.js";
-import  MyWork from "./components/PortfolioPages/MyWork";
-import  Resume from "./components/PortfolioPages/Resume.js";
 import {createTheme, ThemeProvider} from '@material-ui/core/styles';
+import './app.css';
+import { theme } from "./components/PortfolioPages/theme";
+
+import { Layout } from "./components/Layout";
+import { About } from "./components/PortfolioPages/About/About";
+import { ContactMe } from "./components/PortfolioPages/Contact/ContactMe";
+import { MyWork } from "./components/PortfolioPages/Works/MyWork";
+import { Resume } from "./components/PortfolioPages/Resume/Resume";
 
 
 
 const App = () => {
-    return (
-    <ThemeProvider theme={createTheme()}>
-        <div>
-        <About />
-        <MyWork />
-        <Resume />
-        <ContactMe />
-        </div>
+  return (
+    <ThemeProvider theme ={createTheme(theme)}>
+        <Layout>
+            <About />
+            <MyWork />
+            <Resume />
+            <ContactMe />
+        </Layout>
     </ThemeProvider>
     );
 }
 
-export default App;
+export default App ;
