@@ -1,13 +1,13 @@
 import React from "react";
 import {createTheme, ThemeProvider} from '@material-ui/core/styles';
 import './app.css';
-import { theme } from "./components/PortfolioPages/theme";
+import { theme } from "./components/theme";
 
 import { Layout } from "./components/Layout";
-import { About } from "./components/PortfolioPages/About/About";
-import { ContactMe } from "./components/PortfolioPages/Contact/ContactMe";
-import { MyWork } from "./components/PortfolioPages/Works/MyWork";
-import { Resume } from "./components/PortfolioPages/Resume/Resume";
+import { About } from "./components/About";
+import { ContactMe } from "./components/ContactMe";
+import { MyWork } from "./components/MyWork";
+import { Resume } from "./components/Resume";
 
 
 

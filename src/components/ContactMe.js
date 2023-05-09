@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
   form: {
     display: "flex",
     flexDirection: "column",
-    alignItems: "flex-start",
+    alignItems: "center",
     marginTop: theme.spacing(2),
   },
   label: {
@@ -15,6 +15,11 @@ const useStyles = makeStyles((theme) => ({
   },
   input: {
     marginBottom: theme.spacing(2),
+    borderWidth: '3px !important',
+    borderColor: '#333 !important',
+  },
+  submitButton: {
+    marginTop: theme.spacing(2),
   },
 }));
 
@@ -62,12 +67,12 @@ export default function ContactMe() {
           <TextField
             variant="outlined"
             multiline
-            rows={4}
+            minRows={4}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             className={classes.input}
           />
-          <Button variant="contained" color="primary" type="submit">
+          <Button variant="contained" color="primary" type="submit" className={classes.submitButton}>
             Send
           </Button>
         </form>

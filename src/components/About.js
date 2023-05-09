@@ -1,7 +1,7 @@
 import React from "react";
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import { Box, Grid, makeStyles, Typography } from '@material-ui/core';
-import myImage from '../../../assets/me.jpg';
+import myImage from '../assets/me.jpg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
