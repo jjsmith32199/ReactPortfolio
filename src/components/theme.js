@@ -25,7 +25,7 @@ const theme = responsiveFontSizes(createTheme({
   },
   palette: {
     background: {
-      default: '#009900'//green
+      default: '#f0f0f0'
     },
     primary: {
       main: '#2B37D4',//indigo
